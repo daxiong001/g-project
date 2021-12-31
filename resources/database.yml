@@ -1,0 +1,15 @@
+
+g-server-dev:
+  name: g-server
+  url: 121.4.139.117
+  host: 32726
+  username: g-dev
+  password: WRGmJToAeO
+
+
+g-iam-dev:
+  name: g-iam
+  url: 121.4.139.117
+  host: 32726
+  username: g-dev
+  password: WRGmJToAeO

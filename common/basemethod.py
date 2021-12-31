@@ -1,0 +1,25 @@
+import requests
+
+from utils.logger import log_filter
+
+
+class RequestMethod(object):
+
+    def __init__(self, base_url):
+        self.root_url = base_url
+
+    #@log_filter
+    def request(self, url, method, data=None, json=None, **kwargs):
+        url = self.root_url + url
+        if method == "GET":
+            return requests.get(url, **kwargs)
+        if method == "POST":
+            return requests.post(url, data, json, **kwargs)
+        if method == "PUT":
+            return requests.put(url, data, **kwargs)
+        if method == "DELETE":
+            return requests.delete(url, **kwargs)
+        if method == "PATCH":
+            return requests.patch(url, data, **kwargs)
+
+
