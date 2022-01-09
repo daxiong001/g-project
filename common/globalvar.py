@@ -2,7 +2,7 @@ import datetime
 
 import jsonpath
 
-BASE_URL = "https://qaadminweb.yaowutech.cn/"
+BASE_URL = "https://qaadminweb.yaowutech.cn"
 
 HEAD = ["application/x-www-form-urlencoded", "multipart/form-data", "application/json", "text/xml", "image/jpeg"]
 
@@ -11,9 +11,11 @@ def geturl(url):
     return BASE_URL + url
 
 
-def getHeader(type, i, token=None):
+def headers(type, i=None, token=None):
     if type == 0:
         return {"content-type": HEAD[i]}
+    elif type == 2:
+        return {"Authorization": "bearer " + token}
     else:
         return {"content-type": HEAD[i], "Authorization": "bearer " + token}
 

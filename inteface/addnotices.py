@@ -1,6 +1,6 @@
-from common.globalvar import getHeader, get_KeyValue
+from common.globalvar import get_KeyValue
 from inteface.base import Base
-from inteface.loginparam import Login
+from common.sendmsg import dict
 
 
 class Notices(Base):
@@ -82,8 +82,10 @@ class Notices(Base):
     def postAddNotice(self, token, num):
         response = self.req.request(self.url, self.method, json=self.addNoticeParam(), headers=super(Notices, self).getHeader(token, num))
         noticeId = get_KeyValue(response.json(), "data")
+        if noticeId is not None:
+            dict.append("> 创建施工通知单接口：<font color=\"info\">通过</font>\n")
+        else:
+            dict.append("> 创建施工通知单接口：<font color=\"comment\">失败</font>\n")
         return noticeId
 
 
-if __name__ == '__main__':
-    Notices().postAddNotice()

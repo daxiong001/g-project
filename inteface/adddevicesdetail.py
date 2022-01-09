@@ -1,6 +1,6 @@
 from common.globalvar import get_KeyValue
 from inteface.base import Base
-
+from common.sendmsg import dict
 
 class AddDevicesDetail(Base):
 
@@ -21,9 +21,13 @@ class AddDevicesDetail(Base):
         }
         return json
 
-    def postAddDevicesDetail(self):
-        response = self.req.request(self.url, self.method, json=self.deviceDetailParam(), headers=super(AddDevicesDetail, self).getHeader())
+    def postAddDevicesDetail(self, token, num):
+        response = self.req.request(self.url, self.method, json=self.deviceDetailParam(), headers=super(AddDevicesDetail, self).getHeader(token, num))
         detailId = get_KeyValue(response.json(), "data")
+        if detailId is not None:
+            dict.append("> 添加设备明细接口：<font color=\"info\">通过</font>\n")
+        else:
+            dict.append("> 添加设备明细接口：<font color=\"comment\">失败</font>\n")
         return detailId
 
 if __name__ == '__main__':

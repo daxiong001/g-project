@@ -3,6 +3,7 @@ from inteface.base import Base
 from inteface.loginparam import Login
 from tables.connect_server import Server
 from tables.g_server_models import BBuildNoticeDevice, BBuildNoticeDeviceAssign
+from common.sendmsg import dict
 
 
 class AddTenantOrder(Base):
@@ -67,6 +68,10 @@ class AddTenantOrder(Base):
                                     json=self.addParam(noticesId, self.queryList(noticesId)[0],
                                                        self.queryList(noticesId)[1]),
                                     headers=super(AddTenantOrder, self).getHeader(token, num))
+        if response is not None:
+            dict.append("> 平台调度接口：<font color=\"info\">通过</font>\n")
+        else:
+            dict.append("> 平台调度接口：<font color=\"comment\">失败</font>\n")
 
 
 if __name__ == '__main__':

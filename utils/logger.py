@@ -1,6 +1,9 @@
 import json
-import logging, time, os
+import os
+import time
 from functools import wraps
+import logging
+import json as complexjson
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 # 定义日志文件路径
@@ -41,7 +44,10 @@ def log_filter(func):
             logger.info("请求地址: {0}".format(rsp.request.url))
             logger.info("请求方法: {0}".format(rsp.request.method))
             logger.info("请求头: {0}".format(rsp.request.headers))
-            logger.info("请求参数: {0}".format(bytes.decode(rsp.request.body)))
+            if type(rsp.request.body) == str:
+                logger.info("请求参数: {0}".format(rsp.request.body))
+            else:
+                logger.info("请求参数: {0}".format(rsp.request.body.decode("utf-8", "ignore")))
             logger.info("响应结果：{0}".format(json.loads(bytes.decode(rsp.content))))
             end = 1000 * time.time()
             logger.info(f"Time consuming: {end - start}ms")

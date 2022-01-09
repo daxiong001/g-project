@@ -1,6 +1,4 @@
-from inteface.adddevicesdetail import AddDevicesDetail
-from inteface.addnotices import Notices
-from inteface.addtenantorder import AddTenantOrder
+from common.sendmsg import dict
 from inteface.base import Base
 from tables.g_server_models import BBuildDeviceTenantDispatchInfo, BDispatchTenantInfo, BDispatchTenantDevice
 
@@ -52,17 +50,9 @@ class TenantDispatchConfirm(Base):
 
     def postTenantDispatchConfirm(self, token, num, dispatchTenantId, dispatchTenantDeviceId, deviceDetailId):
         response = self.req.request(self.url, self.method, json=self.tenantDispatchParam(dispatchTenantId, dispatchTenantDeviceId, deviceDetailId), headers=super(TenantDispatchConfirm, self).getHeader(token, num))
+        if response.content is not None:
+            dict.append("> 商户调度接口：<font color=\"info\">通过</font>\n")
+        else:
+            dict.append("> 商户接口：<font color=\"comment\">失败</font>\n")
 
 
-if __name__ == '__main__':
-        a = Notices()
-        b = AddTenantOrder()
-        noticesId = a.postAddNotice()
-        print(noticesId)
-        assignId = b.queryList(noticesId)[1]
-        b.postTenantDispatch(noticesId)
-        print(assignId)
-        s = TenantDispatchConfirm()
-        g = AddDevicesDetail()
-        s.postTenantDispatchConfirm(s.queryList(noticesId, assignId)[0], s.queryList(noticesId, assignId)[1], g.postAddDevicesDetail())
-    
