@@ -86,6 +86,7 @@ class Notices(Base):
             dict.append("> 创建施工通知单接口：<font color=\"info\">通过</font>\n")
         else:
             dict.append("> 创建施工通知单接口：<font color=\"comment\">失败</font>\n")
+            
         return noticeId
 
 

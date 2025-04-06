@@ -1,0 +1,10 @@
+[2023-03-14 01:29:13,600][logger.py 39][INFO]: =============  Begin: request  =============
+[2023-03-14 01:29:13,600][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7f8fb1533a60>,)Args: {'url': '/api/iam/v1/user/login', 'method': 'POST', 'json': {'username': 'admin', 'password': 'T7Y3CL+Xg8830KxbCoCu6H+oVLuOZfYtr8STTTvr+HXg2ulHl7uf1nyCtgZ7ddc9LeWNC6NkmTpxTSYu94SdQ0fkZEiokdZz/H+D7+UfmzIktJGUrF5666KEh5bIssLdctNBA0QZW4QXZstK4wpSvE8ld48wGI8tYO9cMbw+XBg=', 'webType': 'OPERATION_ADMIN'}, 'headers': {'content-type': 'application/json'}}
+[2023-03-14 01:29:14,342][logger.py 44][INFO]: 请求地址: https://qaadminweb.yaowutech.cn/api/iam/v1/user/login
+[2023-03-14 01:29:14,342][logger.py 45][INFO]: 请求方法: POST
+[2023-03-14 01:29:14,342][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'Content-Length': '239'}
+[2023-03-14 01:29:14,342][logger.py 50][INFO]: 请求参数: {"username": "admin", "password": "T7Y3CL+Xg8830KxbCoCu6H+oVLuOZfYtr8STTTvr+HXg2ulHl7uf1nyCtgZ7ddc9LeWNC6NkmTpxTSYu94SdQ0fkZEiokdZz/H+D7+UfmzIktJGUrF5666KEh5bIssLdctNBA0QZW4QXZstK4wpSvE8ld48wGI8tYO9cMbw+XBg=", "webType": "OPERATION_ADMIN"}
+[2023-03-14 01:29:14,342][logger.py 51][INFO]: 响应结果：{'success': False, 'code': 4000, 'desc': None, 'data': None}
+[2023-03-14 01:29:14,343][logger.py 53][INFO]: Time consuming: 742.2548828125ms
+[2023-03-14 01:29:14,343][logger.py 54][INFO]: =============   End: request   =============
+

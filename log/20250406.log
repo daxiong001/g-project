@@ -1,0 +1,130 @@
+[2025-04-06 15:37:24,487][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:37:24,488][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7f8f99c05c70>,)Args: {'url': 'admin/user/input', 'method': 'get', 'json': None}
+[2025-04-06 15:37:24,488][logger.py 57][ERROR]: AttributeError("'NoneType' object has no attribute 'request'")
+[2025-04-06 15:38:08,234][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:38:08,235][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7fc99805ccd0>,)Args: {'url': 'admin/user/input', 'method': 'get', 'json': None}
+[2025-04-06 15:38:08,235][logger.py 57][ERROR]: AttributeError("'NoneType' object has no attribute 'request'")
+[2025-04-06 15:41:20,651][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:41:20,651][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7f7f8805ccd0>,)Args: {'url': 'admin/user/input', 'method': 'get'}
+[2025-04-06 15:41:20,652][logger.py 57][ERROR]: AttributeError("'NoneType' object has no attribute 'request'")
+[2025-04-06 15:42:10,608][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:42:10,608][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7f985805ccd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:42:10,624][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:42:10,624][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:42:10,624][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:42:10,624][logger.py 57][ERROR]: AttributeError("'NoneType' object has no attribute 'decode'")
+[2025-04-06 15:45:16,046][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:45:16,047][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7fb43805ccd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:45:16,057][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:45:16,057][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:45:16,057][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:45:16,057][logger.py 51][INFO]: 响应结果：{'code': 200, 'message': '登陆成功', 'data': []}
+[2025-04-06 15:45:16,057][logger.py 53][INFO]: Time consuming: 10.7578125ms
+[2025-04-06 15:45:16,057][logger.py 54][INFO]: =============   End: request   =============
+
+[2025-04-06 15:45:47,690][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:45:47,691][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7fb56801ccd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:45:47,701][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:45:47,701][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:45:47,701][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:45:47,701][logger.py 51][INFO]: 响应结果：{'code': 200, 'message': '登陆成功', 'data': []}
+[2025-04-06 15:45:47,701][logger.py 53][INFO]: Time consuming: 10.68115234375ms
+[2025-04-06 15:45:47,701][logger.py 54][INFO]: =============   End: request   =============
+
+[2025-04-06 15:46:51,910][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:46:51,910][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7f843005ccd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:46:51,919][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:46:51,920][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:46:51,920][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:46:51,920][logger.py 51][INFO]: 响应结果：{'code': 200, 'message': '登陆成功', 'data': []}
+[2025-04-06 15:46:51,920][logger.py 53][INFO]: Time consuming: 9.91357421875ms
+[2025-04-06 15:46:51,920][logger.py 54][INFO]: =============   End: request   =============
+
+[2025-04-06 15:48:52,970][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:48:52,970][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7fac4805ccd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:48:52,980][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:48:52,980][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:48:52,980][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:48:52,980][logger.py 47][INFO]: 请求c参数: None
+[2025-04-06 15:48:52,980][logger.py 59][ERROR]: AttributeError("'Response' object has no attribute 'response'")
+[2025-04-06 15:49:17,505][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:49:17,505][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7f858805ccd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:49:17,526][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:49:17,526][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:49:17,526][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:49:17,526][logger.py 47][INFO]: 请求c参数: None
+[2025-04-06 15:49:17,526][logger.py 53][INFO]: 响应结果：b'{"code":200,"message":"\xe7\x99\xbb\xe9\x99\x86\xe6\x88\x90\xe5\x8a\x9f","data":[]}'
+[2025-04-06 15:49:17,526][logger.py 55][INFO]: Time consuming: 21.31103515625ms
+[2025-04-06 15:49:17,526][logger.py 56][INFO]: =============   End: request   =============
+
+[2025-04-06 15:50:08,200][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:50:08,201][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7fe91805ccd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:50:08,210][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:50:08,211][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:50:08,211][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:50:08,211][logger.py 47][INFO]: 请求c参数: None
+[2025-04-06 15:50:08,211][logger.py 53][INFO]: 响应结果：b'{"code":200,"message":"\xe7\x99\xbb\xe9\x99\x86\xe6\x88\x90\xe5\x8a\x9f","data":[]}'
+[2025-04-06 15:50:08,211][logger.py 55][INFO]: Time consuming: 10.5283203125ms
+[2025-04-06 15:50:08,211][logger.py 56][INFO]: =============   End: request   =============
+
+[2025-04-06 15:54:08,517][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:54:08,517][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7fcfa80dccd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:54:08,527][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:54:08,527][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:54:08,527][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:54:08,527][logger.py 47][INFO]: 请求c参数: None
+[2025-04-06 15:54:08,527][logger.py 59][ERROR]: TypeError('can only concatenate str (not "dict") to str')
+[2025-04-06 15:54:37,593][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:54:37,594][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7fac38174cd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:54:37,604][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:54:37,604][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:54:37,604][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:54:37,604][logger.py 47][INFO]: 请求c参数: None
+[2025-04-06 15:54:37,604][logger.py 53][INFO]: 响应结果：
+[2025-04-06 15:54:37,604][logger.py 55][INFO]: Time consuming: 10.572021484375ms
+[2025-04-06 15:54:37,604][logger.py 56][INFO]: =============   End: request   =============
+
+[2025-04-06 15:55:29,551][logger.py 39][INFO]: =============  Begin: request  =============
+[2025-04-06 15:55:29,551][logger.py 40][INFO]: (<common.basemethod.RequestMethod object at 0x7fa8100d4cd0>,)Args: {'url': 'admin/user/input', 'method': 'GET'}
+[2025-04-06 15:55:29,561][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 15:55:29,561][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 15:55:29,561][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 15:55:29,561][logger.py 47][INFO]: 请求c参数: None
+[2025-04-06 15:55:29,561][logger.py 52][INFO]: 响应结果：{'code': 200, 'message': '登陆成功', 'data': []}
+[2025-04-06 15:55:29,561][logger.py 55][INFO]: Time consuming: 9.7900390625ms
+[2025-04-06 15:55:29,561][logger.py 56][INFO]: =============   End: request   =============
+
+[2025-04-06 17:26:46,779][logger.py 39][INFO]: =============  Begin: gt_login  =============
+[2025-04-06 17:26:46,779][logger.py 40][INFO]: ()Args: {}
+[2025-04-06 17:26:46,790][logger.py 44][INFO]: 请求地址: http://127.0.0.1:8000/api/server/v1/admin/user/input
+[2025-04-06 17:26:46,790][logger.py 45][INFO]: 请求方法: GET
+[2025-04-06 17:26:46,790][logger.py 46][INFO]: 请求头: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[2025-04-06 17:26:46,790][logger.py 47][INFO]: 请求c参数: None
+[2025-04-06 17:26:46,790][logger.py 52][INFO]: 响应结果：{'code': 200, 'message': '登陆成功', 'data': []}
+[2025-04-06 17:26:46,790][logger.py 55][INFO]: Time consuming: 10.888671875ms
+[2025-04-06 17:26:46,790][logger.py 56][INFO]: =============   End: gt_login   =============
+
+[2025-04-06 23:24:10,653][logger.py 78][INFO]: 🟢 接口请求开始 | 函数名: gt_login
+[2025-04-06 23:24:10,653][logger.py 79][INFO]: 🔍 请求参数 | 位置参数: () | 关键字参数: {}
+[2025-04-06 23:24:10,666][logger.py 85][INFO]: 🟩 响应成功 | 状态码: 200
+[2025-04-06 23:24:10,666][logger.py 86][INFO]: 响应内容: {"code":200,"message":"登陆成功","data":[]}
+[2025-04-06 23:24:10,667][logger.py 95][INFO]: ⏱️ 请求耗时: 0.01秒
+
+[2025-04-06 23:26:00,027][logger.py 78][INFO]: 🟢 接口请求开始 | 函数名: gt_login
+[2025-04-06 23:26:00,027][logger.py 79][INFO]: 🔍 请求参数 | 位置参数: () | 关键字参数: {}
+[2025-04-06 23:26:00,038][logger.py 85][INFO]: 🟩 响应成功 | 状态码: 200
+[2025-04-06 23:26:00,038][logger.py 86][INFO]: 响应内容: {"code":200,"message":"登陆成功","data":[]}
+[2025-04-06 23:26:00,038][logger.py 95][INFO]: ⏱️ 请求耗时: 0.01秒
+
+[2025-04-06 23:29:57,937][logger.py 78][INFO]: 🟢 接口请求开始 | 函数名: gt_login
+[2025-04-06 23:29:57,938][logger.py 79][INFO]: 🔍 请求参数 | 位置参数: () | 关键字参数: {}
+[2025-04-06 23:29:57,947][logger.py 85][INFO]: 🟩 响应成功 | 状态码: 200
+[2025-04-06 23:29:57,947][logger.py 86][INFO]: 响应内容: {"code":200,"message":"登陆成功","data":[]}
+[2025-04-06 23:29:57,947][logger.py 95][INFO]: ⏱️ 请求耗时: 0.01秒
+
+[2025-04-06 23:51:30,878][logger.py 78][INFO]: 🟢 接口请求开始 | 函数名: gt_login
+[2025-04-06 23:51:30,878][logger.py 79][INFO]: 🔍 请求参数 | 位置参数: () | 关键字参数: {}
+[2025-04-06 23:51:30,891][logger.py 85][INFO]: 🟩 响应成功 | 状态码: 200
+[2025-04-06 23:51:30,891][logger.py 86][INFO]: 响应内容: {"code":200,"message":"登陆成功","data":[]}
+[2025-04-06 23:51:30,891][logger.py 95][INFO]: ⏱️ 请求耗时: 0.01秒
+

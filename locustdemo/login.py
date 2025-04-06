@@ -1,6 +1,8 @@
 import requests
 
+from common.basemethod import RequestMethod
 from locustdemo.result_base import ResultBase
+from utils.logger import api_log_decorator
 
 
 class Login(object):
@@ -21,5 +23,11 @@ class Login(object):
         print(res.json())
         return res.json().get("data").get("access_token")
 
+
+@api_log_decorator
+def gt_login():
+    req = RequestMethod("http://127.0.0.1:8000/api/server/v1/")
+    response = req.request(url="admin/user/input", method="GET")
+    return response
 if __name__ == '__main__':
-    print(Login().postRequest())
+    gt_login()

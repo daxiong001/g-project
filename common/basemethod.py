@@ -1,6 +1,6 @@
 import requests
 import json as complexjson
-from utils.logger import log_filter
+# from utils.logger import log_filter
 
 
 class RequestMethod(object):
@@ -8,7 +8,7 @@ class RequestMethod(object):
     def __init__(self, base_url):
         self.root_url = base_url
 
-    @log_filter
+
     def request(self, url, method, data=None, json=None, **kwargs):
         url = self.root_url + url
         if method == "GET":
